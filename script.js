@@ -56,7 +56,7 @@ btnHold.addEventListener('click', function () {
   score[activePlayer] += currentScore;
 
   // Declare winner if score 100
-  if (score[activePlayer] >= 10) {
+  if (score[activePlayer] >= 100) {
     document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
     btnRollDice.disabled = true;
     btnHold.disabled = true;
